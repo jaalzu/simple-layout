@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-blue:hsl(223, 87%, 63%);
+
+    --color-pale-blue:hsl(223, 100%, 88%);
+    --color-red:hsl(354, 100%, 66%);
+
+    --color-gray:hsl(0, 0%, 59%);
+    --color-dark:hsl(209, 33%, 12%);
+
+    --ff-:"Libre Franklin", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-width: 80vw;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    height: 95vh;
+    font-family: var(--ff-);
+    line-height: 1.6;
+}
+
+.logo{
+    margin-bottom: 1.8rem;
+}
+
+h1{
+    color: var(--color-gray);
+    font-weight: 250;
+}
+
+h1 span{
+    color: var(--color-dark);
+    font-weight: 650;
+}
+
+.span-2{
+    color: var(--color-dark);
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-size: .9rem;
+}
+
+
+.form{
+    display: flex;
+    gap: .5rem;
+}
+
+.input-box{
+    display: flex;
+    gap: .7rem;
+    margin-bottom: 3.5rem;
+    margin-top: .5rem;
+    position: relative;
+}
+
+.input-box input{
+    border-radius: 20px;
+    border: 1px solid gainsboro;
+    outline: none;
+    width: 330px;
+    height: 35px;
+    padding-left: 1.3rem;
+}
+
+@media screen and (max-width:680px){
+    body{
+        margin-inline: 2rem ;
+    }
+    
+    .form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn{
+        margin-bottom: 4rem;
+        width: 100% !important;
+    }
+
+    .input-box{
+        margin-bottom: 0rem !important;
+    }
+
+    
+}
+
+.error{
+    position: absolute;
+    left: 3%;
+    bottom: -60%;
+    font-weight: 350;
+    color: rgb(220, 34, 34);
+    font-size: .650rem;
+    display: none;
+}
+
+
+.btn{
+    width: 130px;
+    margin-top: .5rem;
+    height: 35px;
+    border-radius: 20px;
+    background-color: var(--color-blue);
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: .7rem;
+    font-weight: 500;
+    -webkit-box-shadow: 3px 5px 14px -7px rgba(0,0,0,0.44);
+-moz-box-shadow: 3px 5px 14px -7px rgba(0,0,0,0.44);
+box-shadow: 3px 5px 14px -7px rgba(0,0,0,0.44);
+}
+
+.btn:hover{
+    opacity: .8;
+}
+
+input::placeholder{
+    position: absolute;
+    font-size: .750rem;
+    left: 7%;
+    color: rgb(213, 213, 213);
+}
+
+.footer__links{
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+}
+
+.footer__links a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+     padding: .350rem;
+    border-radius: 50%;
+    border: 1px solid rgb(230, 230, 230);
+    color: var(--color-blue);
+    margin-inline: .350rem; 
+    text-decoration: none;   
+}
+
+.footer__links a:hover{
+    background-color: var(--color-blue);
+    color: white;
+}
+
+.footer__links i{
+    font-weight: 550;
+    font-size: 1.1rem;
+}
+
+.copyright p{
+    color: var(--color-gray);
+font-weight: 250;
+font-size: .7rem;
+margin-top: .5rem;
+}
